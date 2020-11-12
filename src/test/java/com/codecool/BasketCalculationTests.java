@@ -9,7 +9,7 @@ public class BasketCalculationTests {
     BasketCalculation basketCalculation = new BasketCalculation(myFileReader);
 
     @Test
-    public void shouldGetFinalPrice(){
+    public void shouldGetFinalPrice() {
         Double finalePrice = basketCalculation.getFinaleBill(myFileReader.getBasketFromFile());
         Double actual = 17.0;
         Assert.assertEquals(finalePrice, actual);
